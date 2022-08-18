@@ -1,0 +1,21 @@
+body{
+    display: flex;
+}
+.color {
+    color: #f2c1a5;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 24px;
+    width: auto;
+    height: auto;
+}
+
+table {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}

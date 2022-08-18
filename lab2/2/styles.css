@@ -1,0 +1,7 @@
+body {
+    font-family: 'Courier New', Courier;
+}
+table, td, th {
+    border-bottom: 1px black solid;
+    border-collapse: collapse;
+}
