@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Lab3</title>
+    <style>
+        .tra {
+            transition: linear 1.2s;
+        }
+    </style>
+    <script>
+        let check = true;
+        function change(){
+            let wid = document.getElementById('start');
+            let wid2 = document.getElementById('start2')
+            let wid3 = document.getElementById('start3')
+            let wid4 = document.getElementById('start4')
+            let wid5 = document.getElementById('start5')
+            if (check){
+                wid.style.width = "420px"
+                wid2.style.width = "180px"
+                wid3.style.width = "360px"
+                wid4.style.width = "300px"
+                wid5.style.width = "540px"
+                check = false;
+            } else {
+                wid.style.width = "120px"
+                wid2.style.width = "120px"
+                wid3.style.width = "120px"
+                wid4.style.width = "120px"
+                wid5.style.width = "120px"
+                check = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="tra" id="start" style="margin-top: 5px; padding: 0.24rem; width: 120px; 
+    background-image: linear-gradient(to right, darkmagenta, blue); color: aliceblue;">Math</div>
+    <div class="tra" id="start2" style="margin-top: 5px; padding: 0.24rem; width: 120px; 
+    background-image: linear-gradient(to right, darkmagenta, blue); color: aliceblue;">Thai</div>
+    <div class="tra" id="start3" style="margin-top: 5px; padding: 0.24rem; width: 120px; 
+    background-image: linear-gradient(to right, darkmagenta, blue); color: aliceblue;">English</div>
+    <div class="tra" id="start4" style="margin-top: 5px; padding: 0.24rem; width: 120px; 
+    background-image: linear-gradient(to right, darkmagenta, blue); color: aliceblue;">Science</div>
+    <div class="tra" id="start5" style="margin-top: 5px; padding: 0.24rem; width: 120px; 
+    background-image: linear-gradient(to right, darkmagenta, blue); color: aliceblue;">Social</div>
+    <button onclick="change()" style="margin-top: 5px; padding: 0.24rem;">View Chart</button>
+</body>
+
+</html>
