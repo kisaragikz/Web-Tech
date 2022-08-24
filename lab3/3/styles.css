@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 20vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#box0, #box1, #box2, #box3 {
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+}
+
+#box0 {
+    background-image: url('http://10.0.15.20/312lab3/images/1.png');
+}
+
+#box1 {
+    background-image: url('http://10.0.15.20/312lab3/images/2.png');
+}
+
+#box2 {
+    background-image: url('http://10.0.15.20/312lab3/images/3.png');
+}
+
+#box3 {
+    background-image: url('http://10.0.15.20/312lab3/images/4.png');
+}
+
+button {
+    width: 20vw;
+    margin-top: 3vh;
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

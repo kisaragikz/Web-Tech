@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" src="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img id="box1" src="http://10.0.15.20/312lab3/images/1.png">
+        <img id="box2" src="http://10.0.15.20/312lab3/images/2.png">
+        <div>
+            <img id="box3" src="http://10.0.15.20/312lab3/images/3.png">
+            <img id="box4" src="http://10.0.15.20/312lab3/images/4.png">
+        </div>
+    </div>
+    <button id="change" onclick="changeimage()">Change</button>
+
+</body>
+
+<script>
+    var counter = 0
+    function changeimage() {
+        counter += 1
+        if (counter % 4 == 1) {
+            document.getElementById('box1').src = "http://10.0.15.20/312lab3/images/3.png";
+            document.getElementById('box2').src = "http://10.0.15.20/312lab3/images/1.png";
+            document.getElementById('box3').src = "http://10.0.15.20/312lab3/images/4.png";
+            document.getElementById('box4').src = "http://10.0.15.20/312lab3/images/2.png";
+        }
+        else if (counter % 4 == 2) {
+            document.getElementById('box1').src = "http://10.0.15.20/312lab3/images/4.png";
+            document.getElementById('box2').src = "http://10.0.15.20/312lab3/images/3.png";
+            document.getElementById('box3').src = "http://10.0.15.20/312lab3/images/2.png";
+            document.getElementById('box4').src = "http://10.0.15.20/312lab3/images/1.png";
+
+        }
+        else if (counter % 4 == 3) {
+            document.getElementById('box1').src = "http://10.0.15.20/312lab3/images/2.png";
+            document.getElementById('box2').src = "http://10.0.15.20/312lab3/images/4.png";
+            document.getElementById('box3').src = "http://10.0.15.20/312lab3/images/1.png";
+            document.getElementById('box4').src = "http://10.0.15.20/312lab3/images/3.png";
+
+        }
+        else if (counter % 4 == 0) {
+            document.getElementById('box1').src = "http://10.0.15.20/312lab3/images/1.png";
+            document.getElementById('box2').src = "http://10.0.15.20/312lab3/images/2.png";
+            document.getElementById('box3').src = "http://10.0.15.20/312lab3/images/3.png";
+            document.getElementById('box4').src = "http://10.0.15.20/312lab3/images/4.png";
+        }
+
+    }
+
+</script>
+
+</html>
