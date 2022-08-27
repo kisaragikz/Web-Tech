@@ -13,12 +13,12 @@ function tictactoe(boxid) {
         change.innerHTML = "X";
         check = false;
         change.style.borderColor = "#04c0b2";
-        checkwin();
+        setTimeout(function(){checkwin()}, 50);
     } else if (!check && change.innerHTML == "" && boxid != "reset") {
         change.innerHTML = "O";
         check = true;
         change.style.borderColor = "#04c0b2";
-        checkwin();
+        setTimeout(function(){checkwin()}, 50);
     } else if (boxid == "reset") {
         reset();
     }
