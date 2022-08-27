@@ -1,0 +1,266 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Lab3</title>
+    <script src="validator.js"></script>
+    <style>
+        * {
+            font-family: Cairo;
+            background-color: #0a1423;
+            --xo: #04c0b2;
+            --xo2: #68d9d1;
+            --bg: #11213a;
+            --bg2: #032b6f;
+        }
+        
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0px 0px 5px;
+            color: var(--xo2);
+        }
+        
+        .table {
+            position: relative;
+            transform: translate(77%, 0%);
+            padding: 15% 19% 24% 15%;
+            width: 5%;
+        }
+        
+        #box1 {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box1:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box2 {
+            position: absolute;
+            top: 1%;
+            left: 34.5%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box2:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box3 {
+            position: absolute;
+            top: 1%;
+            left: 68%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box3:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box4 {
+            position: absolute;
+            top: 34.5%;
+            left: 1%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box4:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box5 {
+            position: absolute;
+            top: 34.5%;
+            left: 34.5%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box5:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box6 {
+            position: absolute;
+            top: 34.5%;
+            left: 68%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box6:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box7 {
+            position: absolute;
+            top: 68%;
+            left: 1%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box7:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #box8 {
+            position: absolute;
+            top: 68%;
+            left: 34.5%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box8:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        #box9 {
+            position: absolute;
+            top: 68%;
+            left: 68%;
+            padding: 0%;
+            font-size: 90px;
+            max-width: 31%;
+            width: 31%;
+            max-height: 31%;
+            height: 31%;
+            background-color: var(--bg);
+            transition: linear 0.1s;
+            color: var(--xo);
+        }
+        #box9:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+            border-color: black;
+        }
+        
+        #reset{
+            position: absolute;
+            top: 89%;
+            left: 110%;
+            width: 20%;
+            height: 10%;
+            font-size: 180%;
+            background-color: var(--bg);
+            color: var(--xo);
+        }
+        
+        #reset:hover{
+            cursor: pointer;
+            background-color: var(--bg2);
+            color: var(--xo2);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Tic Tac Toe</h1>
+        <h1 id="turn">It's Turn : X Player</h1>
+        <div class="table">
+            <div class="row1">
+                <button id="box1" onclick="tictactoe(this.id)"></button>
+                <button id="box2" onclick="tictactoe(this.id)"></button>
+                <button id="box3" onclick="tictactoe(this.id)"></button>
+            </div>
+            <div class="row2">
+                <button id="box4" onclick="tictactoe(this.id)"></button>
+                <button id="box5" onclick="tictactoe(this.id)"></button>
+                <button id="box6" onclick="tictactoe(this.id)"></button>
+            </div>
+            <div class="row3">
+                <button id="box7" onclick="tictactoe(this.id)"></button>
+                <button id="box8" onclick="tictactoe(this.id)"></button>
+                <button id="box9" onclick="tictactoe(this.id)"></button>
+                <button id="reset" onclick="tictactoe(this.id)">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
