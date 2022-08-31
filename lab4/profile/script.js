@@ -6,9 +6,11 @@ function changeimg() {
     if (count == 1) {
         Image_Id.src = "./img/mypic2.png";
         count++;
-    }
-    else if (count == 2) {
+    } else if (count == 2) {
         Image_Id.src = "./img/mypic3.jpg";
+        count++;
+    } else if (count == 3) {
+        Image_Id.src = "./img/mypic4.jpg";
         count++;
     } else {
         Image_Id.src = "./img/mypic.jpg";
