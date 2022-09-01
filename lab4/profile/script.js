@@ -23,12 +23,12 @@ function change(){
     let wid2 = document.getElementById('start2')
     let wid3 = document.getElementById('start3')
     if (check){
-        wid.style.width = "590px"
-        wid2.style.width = "510px"
-        wid3.style.width = "110px"
-        wid.innerHTML = 'HTML 59%'
-        wid2.innerHTML = 'CSS 51%'
-        wid3.innerHTML = 'JS 11%'
+        wid.style.width = "497px"
+        wid2.style.width = "435px"
+        wid3.style.width = "120px"
+        wid.innerHTML = 'HTML 49.7%'
+        wid2.innerHTML = 'CSS 43.5%'
+        wid3.innerHTML = 'JS 6.8%'
         check = false;
     } else {
         wid.style.width = "100px"
