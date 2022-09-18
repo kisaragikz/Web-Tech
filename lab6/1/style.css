@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+.left {
+    float: left;
+    width: 33%;
+}
+
+.center {
+    float: left;
+    width: 33%;
+}
+
+.right {
+    float: left;
+    width: 33%;
+}
+
+@media screen and (max-width:400px) {
+
+    .left,
+    .center,
+    .right {
+        width: 100%;
+    }
+}

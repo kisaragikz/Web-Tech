@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Lab6</title>
+    <style>
+        body{
+            position: relative;
+        }
+        
+        .outer{
+            max-width: 100%;
+            background-color: #e5e5e5;
+            padding: 1%;
+        }
+        
+        h1{
+            font-size: 44px;
+        }
+        
+        p{
+            font-size: 30px;
+        }
+        
+        .head{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            margin: 3%;
+            padding: 1%;
+        }
+        
+        .content{
+            display: flex;
+            background-color: white;
+        }
+        
+        .col1{
+            flex:20%;
+        }
+        
+        .nav{
+            background-color: #5f9ea0;
+            margin: 5%;
+            padding: 1% 0% 1% 5%;
+            text-decoration: underline;
+        }
+        
+        .nav:hover{
+            cursor:pointer;
+        }
+        
+        .col2{
+            flex:60%;
+        }
+        
+        .col2 h1, p{
+            margin: 2%;
+        }
+        
+        .col3{
+            flex: 20%;
+        }
+        
+        .foot{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            margin: 3%;
+        }
+        
+        @media screen and (max-width:620px) {
+        
+            .content{
+                display: inline;
+                background-color: white;
+                text-align: center;
+            }
+            .col1{
+                position: fixed;
+                display: flex;
+                top: 0%;
+                background-color: white;
+                width: 100%;
+                padding-bottom: 0%;
+                margin: 0%;
+            }
+            .head{
+                margin-top: 8%;
+            }
+            .nav{
+                background-color: white;
+                text-decoration: none;
+                margin: 0% 1%;
+            }
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer"><h1 class="head">Music for Relax Content</h1></div>
+    <div class="content">
+        <div class="col1">
+            <div class="nav"><p>Home</p></div>
+            <div class="nav"><p>News</p></div>
+            <div class="nav"><p>Contact</p></div>
+            <div class="nav"><p>About</p></div>
+        </div>
+        <div class="col2">
+            <h1>Rick Astley - Never Gonna Give You Up</h1>
+            <p>Never gonna give you up
+                Never gonna let you down
+                Never gonna run around and desert you
+                Never gonna make you cry
+                Never gonna say goodbye
+                Never gonna tell a lie and hurt you</p>
+        </div>
+        <div class="col3"><img src="rickroll.png"></div>
+    </div>
+    <div class="outer"><h1 class="foot"><p>64070164 Teerawat Sangjun</p></h1></div>
+</body>
+</html>
