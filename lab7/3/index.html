@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Lab7</title>
+    <style>
+        h1 {
+            margin: 30px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        div {
+            margin: 20px;
+        }
+        .text{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+        .radio:hover{
+            cursor: pointer;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #age{
+            width: 11%;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.php" method="POST">
+        <div>
+            <h1 style="display: flex;justify-content:center;">Member Registration</h1>
+        </div>
+        <div><label>Name:</label></div>
+        <div><input type="text" class="text" name="name" id="name"></div>
+        <div><label>Address:</label></div>
+        <div><textarea rows="10" name="address"></textarea></div>
+        <div><label>Age:</label></div>
+        <div><input type="number" class="text" name="age" id="age"></div>
+        <div><label>Profession:</label></div>
+        <div><input type="text" class="text" name="profession" id="profession"></div>
+        <div><label>Residential status:</label></div>
+        <div>
+            <input type="radio" name="residential" class="radio" id="residential" value="resident">
+            <label>Resident</label>
+            <input type="radio" name="residential" class="radio" id="residential" value="nonresident">
+            <label>Non-Resident</label>
+        </div>
+        <div style="display:flex;justify-content:center;"><button type="submit" id="submit">Submit</button></div>
+    </form>
+</body>
+</html>
