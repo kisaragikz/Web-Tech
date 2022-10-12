@@ -31,8 +31,7 @@
                <th scope="col">Email</th>
             </tr>
          </thead>
-         <tbody>
-            <tr>';
+         <tbody>';
       while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
          echo '<tr>
             <td>'.$row['CustomerId'].'</td>
