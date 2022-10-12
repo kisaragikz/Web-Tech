@@ -36,9 +36,9 @@
          echo '<tr>
             <td>'.$row['CustomerId'].'</td>
             <td>'.$row['FirstName'].' '.$row['LastName'].'</td>
-            <td>'.$row['Address'].' '.$row['City'].' '.$row['State'].$row['Country'].' '.$row['PostalCode'].'</td>'.
-            '<td>'.$row['Phone'].' '.$row['Fax'].'</td>'.
-            '<td>'.$row['Email'].'</td>
+            <td>'.$row['Address'].' '.$row['City'].' '.$row['State'].$row['Country'].' '.$row['PostalCode'].'</td>
+            <td>'.$row['Phone'].' '.$row['Fax'].'</td>
+            <td>'.$row['Email'].'</td>
          </tr>';
       }
       echo '</table>';
