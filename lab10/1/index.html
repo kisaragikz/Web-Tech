@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Lab10</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            width: 35%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #map {
+            height: 400px;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <label for="">Destination: </label>
+        <input type="text" id="des">
+        <button onclick="desMap()">ไปยังจุดหมาย</button>
+    </div>
+    <div class="box">
+        <label for="">Latitude: </label>
+        <input type="text" id="la">
+        <label for="">Longitude: </label>
+        <input type="text" id="long">
+        <button onclick="initMap()">ไปยังจุดหมาย</button>
+    </div>
+
+    <h3>My Maps Demo</h3>
+    <iframe id="map" width="100%" height="500" src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" allowfullscreen>
+    </iframe>
+    <script>
+        function initMap() {
+            var lat = parseFloat(document.getElementById("la").value);
+            var lng = parseFloat(document.getElementById("long").value);
+            document.getElementById('map').src = 'https://maps.google.com/maps?q=' + lat + ', ' + lng + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
+
+        }
+        function desMap() {
+            // console.log(document.getElementById("des").value)
+            document.getElementById('map').src = 'https://maps.google.com/maps?q=' + document.getElementById("des").value + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWevQxGAwyvcni6FhqnYVUYnI2xs9_onk&callback=initMap">
+        </script>
+</body>
+
+</html>
